@@ -5,7 +5,7 @@ Amazon CloudWatch Events delivers a near real\-time stream of system events that
 You can also use CloudWatch Events to schedule automated actions that are invoked at certain times using cron or rate expressions\. For more information, see [Schedule expressions for rules](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html) in the *Amazon CloudWatch Events User Guide*\.
 
 Common use cases for AWS Batch jobs as a CloudWatch Events target include the following use cases:
-+ A scheduled job is created to occurs at regular time intervals\. For example, a cron job occurs only during low\-usage hours when Amazon EC2 Spot Instances are less expensive\.
++ A scheduled job is created to occur at regular time intervals\. For example, a cron job occurs only during low\-usage hours when Amazon EC2 Spot Instances are less expensive\.
 + An AWS Batch job runs in response to an API operation that's logged in CloudTrail\. For example, a job is submitted whenever an object is uploaded to a specified Amazon S3 bucket, with the CloudWatch Events input transformer passing the bucket and key name of the object to AWS Batch parameters each time\.
 **Note**  
 In this scenario, all of the AWS resources \(such as the Amazon S3 bucket, the CloudWatch Events rule, and all CloudTrail logs\) must be in the same Region\.
